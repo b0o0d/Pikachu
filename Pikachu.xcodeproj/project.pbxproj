@@ -14,6 +14,9 @@
 		9F14599C2C8C56A200F81900 /* PikachuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14599B2C8C56A200F81900 /* PikachuTests.swift */; };
 		9F1459A62C8C56A200F81900 /* PikachuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1459A52C8C56A200F81900 /* PikachuUITests.swift */; };
 		9F1459A82C8C56A200F81900 /* PikachuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1459A72C8C56A200F81900 /* PikachuUITestsLaunchTests.swift */; };
+		9F1459B62C8C570400F81900 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9F1459B52C8C570400F81900 /* ComposableArchitecture */; };
+		9F1459B92C8C571400F81900 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9F1459B82C8C571400F81900 /* Alamofire */; };
+		9F1459C92C8D87AE00F81900 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9F1459C82C8D87AE00F81900 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1459C92C8D87AE00F81900 /* SDWebImageSwiftUI in Frameworks */,
+				9F1459B62C8C570400F81900 /* ComposableArchitecture in Frameworks */,
+				9F1459B92C8C571400F81900 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = Pikachu;
+			packageProductDependencies = (
+				9F1459B52C8C570400F81900 /* ComposableArchitecture */,
+				9F1459B82C8C571400F81900 /* Alamofire */,
+				9F1459C82C8D87AE00F81900 /* SDWebImageSwiftUI */,
+			);
 			productName = Pikachu;
 			productReference = 9F1459872C8C56A100F81900 /* Pikachu.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,11 @@
 				Base,
 			);
 			mainGroup = 9F14597E2C8C56A100F81900;
+			packageReferences = (
+				9F1459B42C8C570400F81900 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				9F1459B72C8C571400F81900 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9F1459C72C8D87AE00F81900 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 9F1459882C8C56A100F81900 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +604,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F1459B42C8C570400F81900 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.0;
+			};
+		};
+		9F1459B72C8C571400F81900 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		9F1459C72C8D87AE00F81900 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F1459B52C8C570400F81900 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F1459B42C8C570400F81900 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		9F1459B82C8C571400F81900 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F1459B72C8C571400F81900 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9F1459C82C8D87AE00F81900 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F1459C72C8D87AE00F81900 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F14597F2C8C56A100F81900 /* Project object */;
 }
