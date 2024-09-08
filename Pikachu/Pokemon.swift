@@ -83,3 +83,25 @@ extension Pokemon {
     static let mock = Pokemon(id: 25, name: "pikachu", height: 4, weight: 60, types: ["electric"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png")
 }
 
+extension Pokemon {
+    var displayName: String {
+        if name.isEmpty {
+            return ""
+        }
+        return String(name.prefix(1).uppercased() + name.dropFirst())
+    }
+    
+    var displayHeight: String {
+        let hightInMeter: Float = Float(height) / 10.0
+        return String(format: "%.1fm", hightInMeter)
+    }
+    
+    var displayWeight: String {
+        let weightInKg: Float = Float(weight) / 10.0
+        return String(format: "%.1fkg", weightInKg)
+    }
+    
+    var displayID: String {
+        return String(format: "#%03d", id)
+    }
+}
