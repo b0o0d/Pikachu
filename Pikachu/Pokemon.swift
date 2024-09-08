@@ -78,3 +78,8 @@ struct Pokemon: Decodable, Equatable {
     }
 
 }
+
+extension Pokemon {
+    static let mock = Pokemon(id: 25, name: "pikachu", height: 4, weight: 60, types: ["electric"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png")
+}
+
