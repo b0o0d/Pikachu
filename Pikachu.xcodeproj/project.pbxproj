@@ -109,10 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				9F14598A2C8C56A100F81900 /* PikachuApp.swift */,
-				9F1459BD2C8C576D00F81900 /* PokemonDetailView.swift */,
-				9F1459BF2C8C578400F81900 /* PokemonDetailFeature.swift */,
-				9F1459C12C8C57BF00F81900 /* Pokemon.swift */,
-				9F1459C32C8C5D4D00F81900 /* APIClient.swift */,
+				9F1459CA2C8DB76300F81900 /* PokemonDetail */,
+				9F1459CB2C8DB76E00F81900 /* Models */,
+				9F1459CC2C8DB77B00F81900 /* Helpers */,
 				9F14598E2C8C56A200F81900 /* Assets.xcassets */,
 				9F1459902C8C56A200F81900 /* Preview Content */,
 			);
@@ -143,6 +142,31 @@
 				9F1459A72C8C56A200F81900 /* PikachuUITestsLaunchTests.swift */,
 			);
 			path = PikachuUITests;
+			sourceTree = "<group>";
+		};
+		9F1459CA2C8DB76300F81900 /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9F1459BD2C8C576D00F81900 /* PokemonDetailView.swift */,
+				9F1459BF2C8C578400F81900 /* PokemonDetailFeature.swift */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		9F1459CB2C8DB76E00F81900 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F1459C12C8C57BF00F81900 /* Pokemon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9F1459CC2C8DB77B00F81900 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F1459C32C8C5D4D00F81900 /* APIClient.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
