@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct PikachuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PokemonDetailView(
+                store: Store(initialState: PokemonDetailFeature.State(name: "pikachu"), reducer: {
+                    PokemonDetailFeature()
+                })
+                
+            )
         }
     }
 }

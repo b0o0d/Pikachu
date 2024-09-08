@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9F14598B2C8C56A100F81900 /* PikachuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14598A2C8C56A100F81900 /* PikachuApp.swift */; };
-		9F14598D2C8C56A100F81900 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14598C2C8C56A100F81900 /* ContentView.swift */; };
 		9F14598F2C8C56A200F81900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F14598E2C8C56A200F81900 /* Assets.xcassets */; };
 		9F1459922C8C56A200F81900 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1459912C8C56A200F81900 /* Preview Assets.xcassets */; };
 		9F14599C2C8C56A200F81900 /* PikachuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14599B2C8C56A200F81900 /* PikachuTests.swift */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		9F1459872C8C56A100F81900 /* Pikachu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pikachu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F14598A2C8C56A100F81900 /* PikachuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikachuApp.swift; sourceTree = "<group>"; };
-		9F14598C2C8C56A100F81900 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F14598E2C8C56A200F81900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F1459912C8C56A200F81900 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F1459972C8C56A200F81900 /* PikachuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PikachuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				9F14598A2C8C56A100F81900 /* PikachuApp.swift */,
-				9F14598C2C8C56A100F81900 /* ContentView.swift */,
 				9F1459BD2C8C576D00F81900 /* PokemonDetailView.swift */,
 				9F1459BF2C8C578400F81900 /* PokemonDetailFeature.swift */,
 				9F1459C12C8C57BF00F81900 /* Pokemon.swift */,
@@ -288,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F14598D2C8C56A100F81900 /* ContentView.swift in Sources */,
 				9F1459C22C8C57BF00F81900 /* Pokemon.swift in Sources */,
 				9F1459C02C8C578400F81900 /* PokemonDetailFeature.swift in Sources */,
 				9F14598B2C8C56A100F81900 /* PikachuApp.swift in Sources */,
